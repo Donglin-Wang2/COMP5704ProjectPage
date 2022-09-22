@@ -38,9 +38,21 @@
 
 <hr noshade="noshade">
 <b><font color="#005128">Project Outline:</font></b> 
+<br>
 Although a wide robotic variety of robotic grasping datasets is available in the literature today, little work has been done to evaluate the quality of the grasp labels in these datasets. Therefore, many either assume the robotic manipulator's geometry and size or the arm attached to the said manipulator. Even more frustratingly, the simulation and control environment used to generate these grasp labels are often not disclosed to the public. Therefore, there is a need for an efficient and parallelizable method that can evaluate the quality of grasps given different manipulator geometry and robotic arms. 
-<p><b><font color="#005128">Startup Paper(s):</font></b> [list your
-startup paper(s) and include a link to the PDF file]</p>
+<br>
+The first part of the project would involve setting up a simulation environment. Specifically, this would be the MuJoCo physics engine without the GUI module, allowing an operating system to run multiple simulation instances concurrently. The second part of the project would involve a set of pre-defined movements for a robotic arm given grasps in a particular dataset. Finally, the third part of the project would be a set of criteria that evaluates the fitness of grasps within a dataset. If time permits, an algorithm will be developed that combines results from various simulation instances to produce more rigorous tests for the grasps within a dataset. 
+<br>
+While not directly related to robotic manipulation, the work done by  <a href="https://ieeexplore.ieee.org/document/9460507"><font color="#000000">Xu et al. (2021)</font></a> serves as an inspiration for this project. The technique used to efficiently offload the workload of multiple ground vehicles to a cloud environment can also be applied to the parallel simulation of robotic manipulation tasks. 
+
+<p><b><font color="#005128">Startup Paper(s):</font></b></p>
+
+<ul>
+  <li>
+    <a href="https://ieeexplore.ieee.org/document/9460507"><font color="#000000">Towards Practical Cloud Offloading for Low-cost Ground Vehicle Workloads</font></a>
+  </li>
+
+</ul>
 
 <p><b><font color="#005128">Deliverables:</font></b></p>
 
